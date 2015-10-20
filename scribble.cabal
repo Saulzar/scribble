@@ -1,0 +1,52 @@
+name:                scribble
+version:             0.1
+synopsis:            A fancy drawing program
+description:         A fancy drawing program
+
+homepage:            https://github.com/saulzar/pong
+bug-reports:         https://github.com/saulzar/pong/issues
+license:             BSD3
+license-file:        LICENSE
+
+author:              Oliver Batchelor
+maintainer:          saulzar@gmail.com
+copyright:           2015 Oliver Batchelor
+category:            FRP
+build-type:          Simple
+cabal-version:       >=1.10
+
+
+
+source-repository head
+  type: git
+  location: https://github.com/saulzar/pong.git
+
+executable scribble1
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  main-is:             Scribble1.hs
+  build-depends:       base, gloss, reflex, reflex-transformers, reflex-gloss-scene,  reflex-animation, transformers, mtl, linear, lens, containers, vector-space
+  default-extensions:  MultiParamTypeClasses ScopedTypeVariables RankNTypes FlexibleContexts TypeFamilies
+
+executable scribble2
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  main-is:             Scribble2.hs
+  build-depends:       base, gloss, reflex, reflex-transformers, reflex-gloss-scene,  reflex-animation, transformers, mtl, linear, lens, containers, vector-space
+  default-extensions:  MultiParamTypeClasses ScopedTypeVariables RankNTypes FlexibleContexts TypeFamilies
+  
+  
+executable scribble3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  main-is:             Scribble3.hs
+  build-depends:       base, gloss, reflex, reflex-transformers, reflex-gloss-scene,  reflex-animation, transformers, mtl, linear, lens, containers, vector-space
+  default-extensions:  MultiParamTypeClasses ScopedTypeVariables RankNTypes FlexibleContexts TypeFamilies
+  
+executable scribble4
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  main-is:             Scribble4.hs
+  build-depends:       base, gloss, reflex, reflex-transformers, reflex-gloss-scene >= 0.1.2,  reflex-animation, transformers, mtl, linear, lens, containers, vector-space
+  default-extensions:  MultiParamTypeClasses ScopedTypeVariables RankNTypes FlexibleContexts TypeFamilies
+  
